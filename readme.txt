@@ -20,6 +20,11 @@ O Anaconda Python pode ser encontrado neste link:
 
 https://www.anaconda.com/download/
 
+Após instalar o Anaconda em sua máquina, deve instalar também o pacote pillow e opencv.
+
+OpenCV: https://www.scivision.co/install-opencv-python-windows/
+Pillow: https://wp.stolaf.edu/it/installing-pil-pillow-cimage-on-windows-and-mac/
+
 Também é necessário que possua uma webcam em sua máquina.
 
 1-Execute o arquivo Face_Capture_With_Rotate.py
