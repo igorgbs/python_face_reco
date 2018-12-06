@@ -1,3 +1,43 @@
+-------------------------------------------UNIVERSIDADE FEDERAL FLUMINENSE
+
+----------------------------------------------INSTITUTO DE COMPUTAÇÃO
+
+---------------------------------------PROGRAMA DE PÓS-GRADUAÇÃO EM COMPUTAÇÃO
+
+-------------------------------------------APRENDIZADO DE MÁQUINA 2018/2
+
+AUTORES: IGOR GARCIA & VICTOR ALENCAR
+
+
+
+
+ABAIXO SEGUE O PASSO A PASSO PARA EXECUTAR
+
+
+Primeiramente, é importante dizer que você deve possuir algum interpretador python instalado em sua máquina. Sugiro utilizar o Anaconda Python. Ele tem disponível para Windows, Mac e Linux. 
+
+O Anaconda Python pode ser encontrado neste link:
+
+https://www.anaconda.com/download/
+
+Também é necessário que possua uma webcam em sua máquina.
+
+1-Execute o arquivo Face_Capture_With_Rotate.py
+
+Ao executar o código, abrirá uma tela com a imagem em tempo real da sua webcam. Em seguida, 50 fotos serão tiradas do seu rosto. Posicione o rosto o mais próximo do centro do quadrado que aparecerá na imagem. Após executar este arquivo, as 50 fotos que foram tiradas do seu rosto, ficarão armazenadas na pasta dataset e o seu nome e ID serão inseridos no arquivo Names.txt.
+
+2- Após isso, execute o arquivo Trainner_All.py
+
+Ao executar este arquivo, seu algoritmo será treinado para poder identificar as imagens posteriores. Ao fim da execução deste arquivo, 3 arquivos .xml serão adicionados ao diretório Recogniser. Estes arquivos conterão as informações necessárias para que seu algoritmo seja capaz de identificar os rostos.
+
+3- Por fim, escolha um dos 3 algoritmos para reconhecimento: Recogniser_Video_EigenFace.py, Recogniser_Video_FisherFace.py ou Recogniser_Video_LBPH.py. 
+
+Cada arquivo é responsável por utilizar um tipo diferente de algoritmo de reconhecimento. Execute os 3 e veja qual se sai melhor. 
+
+É isso!
+
+__________________________________________________________________________________________________________________________________
+
 
 Detector_Video.py: This file detects faces using Haar cascades. It works fine with multiple faces.
 
@@ -36,8 +76,6 @@ After the for loop is compleated, ID and confidence will be ploted.
 
 ------------------FOLDERS -----------
 dataSet --> Contains the images that will be used to train the recogniser.
-FlowCharts --> Contains flow chart designed using Microsoft Visio and png files
 Haar --> Contains Haar Cascades of OpenCV used in the applications
-Plots --> Contains the plots taken using Me4.jpg and Sam.jpg
 Recogniser --> Contains the saved XML files by reconisers
 SaveData --> Contains the data saved by the tester applications
